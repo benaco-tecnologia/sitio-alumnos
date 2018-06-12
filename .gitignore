@@ -4,6 +4,7 @@ certificados/conexion.inc
 include/conexion.inc
 include/conexionresp.inc
 global.asa
+*conexion*
 
 # ignore all logs
 *.log
