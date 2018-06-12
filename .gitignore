@@ -14,3 +14,6 @@ tmp
 
 # ignore test folders or files
 test
+
+# ignore dev folders
+desarrollo/
