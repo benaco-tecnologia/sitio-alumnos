@@ -1,0 +1,60 @@
+<SCRIPT LANGUAGE="VBScript" RUNAT="Server">
+
+Sub Application_OnStart
+	
+	Application("auxactivos")=0 
+	
+	Application("Servidor")="192.168.1.194"
+	Application("Base")="umasnet"
+	Application("Usuario")="sa" 
+	Application("Password")="reflex"
+	
+End Sub
+
+Sub Application_OnEnd
+	//Crear coneccion	
+	//session.abandon
+	//HeadHunter
+	//session.abandon	
+End Sub
+
+
+Sub Session_OnStart
+	application.lock
+	application("auxactivos")=application("auxactivos") + 1
+	if application("auxactivos") >= 300 then
+	    application("auxactivos")=application("auxactivos") - 1
+	    response.redirect("mensaje.asp")	
+	else	
+	    Set Session("Conn") = Server.CreateObject("ADODB.Connection")
+        Session("Conn").ConnectionTimeout = 100
+	    ConnectStr = "PROVIDER=SQLOLEDB;Data Source=192.168.1.194;Initial Catalog=umasnet"
+	    Session("Conn").Open ConnectStr,"sa","reflex"
+	    session("VARID")=Session.SessionID
+	    SESSION.TIMEOUT = 5
+	end if
+	application.unlock
+	
+	Application("server")="smtp.gmail.com"
+	Application("port")="587"
+	Application("ssl")="true"
+	Application("from")="Portal_Alumno"
+	Application("user")="soporteportal@itc.cl"
+	Application("pass")="soporte2013"
+	Application("cred")="true"
+	Application("EncargadoMail")="soporteportal@bettersof.cl"	
+End Sub
+
+Sub Session_OnEnd	
+	application.lock
+	application("auxactivos")=application("auxactivos") - 1
+	application.unlock
+	if Session("Conn") = Nothing then 
+		Set Session("Conn") = Nothing
+	else
+		Session("Conn").close
+		Set Session("Conn") = Nothing
+	end if 
+	session.abandon
+End Sub
+</SCRIPT>

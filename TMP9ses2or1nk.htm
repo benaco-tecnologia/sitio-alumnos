@@ -1,0 +1,152 @@
+<Script Language="JavaScript">
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+</Script>
+<html>
+<head>
+<title>f-der.gif</title>
+<meta http-equiv="Content-Type" content="text/html;">
+<!-- Fireworks 4.0  Dreamweaver 4.0 target.  Created Wed Nov 06 17:26:22 GMT-0300 2002-->
+</head>
+<body bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<div align="left">
+  <table border="0" cellpadding="0" cellspacing="0" height="347" align="left" width="584">
+    <!-- fwtable fwsrc="f-der.png" fwbase="f-der.gif" fwstyle="Dreamweaver" fwdocid = "742308039" fwnested="0" -->
+    <tr> 
+      <td width="336"><img name="fder_r1_c1" src="imag/f-der/f-der_r1_c1.gif" width="336" height="19" border="0"></td>
+      <td width="248"><img name="fder_r1_c2" src="imag/f-der/f-der_r1_c2.gif" width="248" height="19" border="0"></td>
+    </tr>
+    <tr> 
+      <td width="336"><img name="fder_r2_c1" src="imag/f-der/solicitud.gif" width="336" height="28" border="0"></td>
+      <td width="248"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="248" height="28">
+          <param name="movie" value="swf/flecha.swf">
+          <param name="quality" value="high">
+          <embed src="swf/flecha.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="248" height="28">
+          </embed> 
+        </object></td>
+    </tr>
+    <tr valign="bottom"> 
+      <td colspan="2" height="15"><font size="1" face="Verdana, Arial, Helvetica, sans-serif">Los 
+        alumnos al inicio de cada semestre debe inscribir los ramos que clases 
+        correspondientes a la carrera que cursas podr&aacute;s revisarlos permanentemente 
+        las siguientes.</font></td>
+    </tr>
+    <tr valign="top"> 
+      <td colspan="2" height="6">&nbsp;</td>
+    </tr>
+    <tr valign="top"> 
+      <td height="6" colspan="2" > 
+        <select name="carrera">
+          <option selected>Seleccione Carrera :</option>
+          <option>Medicina</option>
+          <option>Ingeniería Comercial</option>
+          <option>Ingeniería Civil</option>
+          <option>Periodismo</option>
+        </select>
+        <select name="asignaturas">
+          <option selected>Seleccione Asignatura :</option>
+          <option>Cálculo I</option>
+          <option>Algebra I</option>
+          <option>Economía</option>
+          <option>Administración</option>
+        </select>
+      </td>
+    <tr valign="top"> 
+      <td height="6">&nbsp;</td>
+    </tr>
+    <tr valign="top"> 
+      <td colspan="2" height="6"><font face="Verdana, Arial, Helvetica, sans-serif" size="1">Motivo 
+        por el cual solicita esta asignatura :</font></td>
+    </tr>
+    <tr> 
+      <td colspan="2" align="center"> 
+        <div align="left"> 
+          <textarea cols="40" rows="6"></textarea>
+        </div>
+      </td>
+    </tr>
+    <tr valign="top"> 
+      <td colspan="2" height="6">&nbsp;</td>
+    </tr>
+    <tr valign="top"> 
+      <td colspan="2" height="83" ALIGN="center"> 
+        <table width="584" cellspacing="0" cellpadding="0" height="81" border="1" bordercolor="#FFFFFF">
+          <tr bgcolor="4a5da1"> 
+            <td height="16" width="48" bgcolor="4a5da1"> 
+              <div align="center"><font face="Verdana, Arial, Helvetica, sans-serif" color="#FFFFFF"><b><font size="1">C&oacute;digo</font></b></font></div>
+            </td>
+            <td height="16" width="286"> 
+              <div align="center"><font face="Verdana, Arial, Helvetica, sans-serif" color="#FFFFFF"><b><font size="1">Asignatura</font></b></font></div>
+            </td>
+            <td height="16" width="65"> 
+              <div align="center"><font face="Verdana, Arial, Helvetica, sans-serif" color="#FFFFFF"><b><font size="1">secci&oacute;n</font></b></font></div>
+            </td>
+            <td height="16" width="91"> 
+              <div align="center"><font face="Verdana, Arial, Helvetica, sans-serif" color="#FFFFFF"><b><font size="1">Horario</font></b></font></div>
+            </td>
+            <td height="16" width="45"> 
+              <div align="center"><font face="Verdana, Arial, Helvetica, sans-serif" color="#FFFFFF"><b><font size="1">Curso</font></b></font></div>
+            </td>
+            <td height="16" width="35" valign="top"> 
+              <div align="center"><font face="Verdana, Arial, Helvetica, sans-serif" color="#FFFFFF"><b><font size="1">Inscribir</font></b></font></div>
+            </td>
+          </tr>
+          <tr bgcolor="ffc172"> 
+            <td width="48" height="16" align="center"><font face="Verdana" size="1">&nbsp;<%=Session("CodCalc")%></font></td>
+            <td width="286" height="16" align="center"><font face="Verdana" size="1">Calculo&nbsp;I</font></td>
+            <td width="65" height="16" align="center"><font face="Verdana" size="1"><%=Session("SecCalc")%></font></td>
+            <td width="91" height="16" align="center"><font face="Verdana" size="1"><%=Session("HorCalc")%></font></td>
+            <td width="45" height="16" align="center"><font face="Verdana" size="1">&nbsp;<%=Session("CodCalc") & Session("SecCalc")%></font></td>
+            <td width="35" height="16" bgcolor="ffc172" valign="top"> 
+              <div align="center"> <font face="Verdana" size="1"> 
+                <input type="radio" name="radiobutton" value="radiobutton" onClick="MM_openBrWindow('CursosCalc.asp','Curso','width=450,height=140')">
+                </font> </div>
+            </td>
+          </tr>
+          <tr bgcolor="ffc172"> 
+            <td width="48" height="16" align="center"><font face="Verdana" size="1">&nbsp;<%=Session("CodAlg")%></font></td>
+            <td width="286" height="16" align="center"><font face="Verdana" size="1">Algebra 
+              I</font></td>
+            <td width="65" height="16" align="center"><font face="Verdana" size="1"><%=Session("SecAlg")%></font></td>
+            <td width="91" height="16" align="center"><font face="Verdana" size="1"><%=Session("HorAlg")%></font></td>
+            <td width="45" height="16" align="center"><font face="Verdana" size="1">&nbsp;<%=Session("CodAlg") & Session("SecAlg")%></font></td>
+            <td width="35" height="16" valign="top"> 
+              <div align="center"> <font face="Verdana" size="1"> 
+                <input type="radio" name="radiobutton" value="radiobutton" onClick="MM_openBrWindow('CursosAlg.asp','Curso','width=450,height=140')">
+                </font> </div>
+            </td>
+          </tr>
+          <tr bgcolor="ffc172"> 
+            <td width="48" height="16"><font face="Verdana" size="1">&nbsp;</font></td>
+            <td width="286" height="16"><font face="Verdana" size="1">&nbsp;</font></td>
+            <td width="65" height="16"><font face="Verdana" size="1">&nbsp;</font></td>
+            <td width="91" height="16"><font face="Verdana" size="1">&nbsp;</font></td>
+            <td width="45" height="16"><font face="Verdana" size="1">&nbsp;</font></td>
+            <td width="35" height="16" valign="top"> 
+              <div align="center"> <font face="Verdana" size="1"> 
+                <input type="radio" name="radiobutton" value="radiobutton">
+                </font> </div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr valign="top"> 
+      <td colspan="2" height="1">&nbsp;</td>
+    </tr>
+    <tr valign="top"> 
+      <td colspan="2" height="1"><font size="1" face="Verdana, Arial, Helvetica, sans-serif" color="#666666">(Este 
+        documento NO constituye certificado)</font> </td>
+    </tr>
+    <tr valign="top"> 
+      <td colspan="2" height="2"> 
+        <div align="right"> 
+          <input type="submit" name="Submit" value="Confirmar Solicitud">
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

@@ -1,0 +1,200 @@
+form{
+	display : inline;
+}
+.box a:hover{
+	color : #A7C92C;
+	text-decoration : none
+}
+.box a:link, .box a:visited, .box a:active{
+	text-decoration : none;
+	color : #E3E3E7
+}
+.box{
+	color : #E3E3E7
+}
+.button{
+	border : 1px solid #5E5D63;
+	color : #000;
+	font : normal 9px verdana, tahoma, arial, helvetica, sans-serif;
+	text-align : center;
+    background-image : url(../addon/imagenes/button.png);
+	
+}
+.caption{
+	border : #27384F 1px solid;
+	padding-bottom : 2px;
+	padding-left : 4px;
+	padding-right : 4px;
+	padding-top : 1px;
+	background-color : #CECED4;
+	font-family : tahoma, arial, verdana, helvetica, sans-serif;
+	font-size : 11px;
+	font-weight : bold;
+}
+.caption2{
+	border : #27384F 1px solid;
+	padding-bottom : 2px;
+	padding-left : 4px;
+	padding-right : 4px;
+	padding-top : 1px;
+}
+.captionErr{
+	border : #27384F 1px solid;
+	padding-bottom : 2px;
+	padding-left : 4px;
+	padding-right : 4px;
+	padding-top : 1px;
+	color : #EE0000;
+	font-family : tahoma, arial, verdana, helvetica, sans-serif;
+	font-size : 11px;
+	font-weight : bold;
+}
+
+.indent{
+	padding : 3px;
+	margin : 5px;
+	font : 11px verdana, tahoma, arial, sans-serif;
+	border-bottom : 1px dotted;
+}
+.maintitle a:hover{
+	color : #70A3DC;
+	text-decoration : none
+}
+.maintitle a:link, .maintitle  a:visited, .maintitle  a:active{
+	text-decoration : none;
+	color : #F0F2F6
+}
+.maintitle{
+	vertical-align : middle;
+	font-size : 7.5pt;
+	font-weight : bold;
+	color : #E3E3E7;
+	padding : 3px 0px 4px 5px;
+	background-color : #475261;
+	background-image : url(../addon/imagenes/tile_back.gif);
+	}
+.memberbar   a:link, .memberbar   a:visited, .memberbar   a:active{
+	text-decoration : none;
+	color : #A7C92C
+}
+.memberbar a:hover{
+	text-decoration : none;
+	color : #BAD1E4
+}
+.memberbar{
+	font-size : 7.5pt;
+	font-weight : bold;
+	line-height : 120%;
+	color : #EAEEF2
+}
+.news{
+	border-left : 1px solid #27384F;
+	border-right : 1px solid #27384F;
+	background-color : #313133;
+}
+.news2{
+	background-color : #D6D6DC;
+}
+.normalname a:link, .normalname a:visited, .normalname a:active{
+	text-decoration : none;
+	font-size : 12px
+}
+.normalname{
+	font-size : 10px;
+	font-weight : bold;
+	color : #0D2F61
+}
+.poll {
+	font : 9px tahoma, verdana, arial, helvetica, sans-serif;
+	padding-bottom : 2px;
+	padding-top : 2px;
+}
+.postlinksbar{
+	background-color : #C3C5CE;
+	padding : 2px;
+	margin-top : 0px;
+	font-size : 9px;
+	background-image : url(../addon/imagenes/tile_sub.gif)
+	}
+.smalltext{
+	font : 9px tahoma, verdana, arial, helvetica, sans-serif;
+}
+.sponso#FF0000by{
+	background-image : url(../addon/imagenes/dot.gif);
+}
+.tbox_old{
+	background-color : #D9DDE3;
+	border : #27384F 1px solid;
+	color : #000000;
+	font : 10px verdana, tahoma, arial, helvetica, sans-serif;
+}
+.tbox{
+	background-color : #D9DDE3;
+	border : 1px inset;
+	color : #000000;
+	font : 10px verdana, tahoma, arial, helvetica, sans-serif;
+}
+.titlemedium  a:link, .titlemedium  a:visited, .titlemedium  a:active{
+	text-decoration : underline;
+	color : #3A4F6C
+}
+.titlemedium{
+	font-weight : bold;
+	color : #3A4F6C;
+	padding : 2px;
+	font-size : 9px;
+	padding : 2px;
+	padding : 3px 0px 2px 5px;
+	background-color : #D6D6DC;
+	background-image : url(../addon/imagenes/tile_sub.gif)}
+a:hover{
+	color : #7D9F05;
+	text-decoration : underline
+}
+a:link, a:visited, a:active{
+	text-decoration : underline;
+	color : #181D30
+}
+BODY{
+	font-family : Verdana, Tahoma, Arial, sans-serif;
+	font-size : 10px;
+	color : #041A48;
+	margin : 0px 10px 0px 10px;
+	background-color : #E3E3E7;
+/*	background-image: url(../addon/imagenes/bkgnd-content.jpg); */
+}
+html{
+	overflow-x : hidden;
+	overflow-y : auto;
+}
+img{
+	vertical-align : none;
+	border : 0px
+}
+li{
+	margin : 3px 0px 3px 0px;
+	list-style : inside url(../addon/imagenes/arrow.gif);
+	list-style-image : url(../addon/imagenes/arrow.gif);
+}
+TABLE, TR, TD{
+	font-family : Verdana, Tahoma, Arial, sans-serif;
+	font-size : 10px;
+	color : #041A48
+}
+.hide { position:absolute; 
+		visibility:hidden;
+}
+.show { position:absolute; 
+		visibility:visible;
+}
+
+.calFondoCalendario {background-color:cyan}
+.calEncabe {font-family:Arial, Helvetica, sans-serif; font-size:11px}
+.calFondoEncabe {background-color:lightgreen}
+.calDias {font-family:Arial, Helvetica, sans-serif; font-size:9px; font-weight:900}
+.calSimbolo {font-family:Arial, Helvetica, sans-serif; font-size:11px; text-decoration:none; font-weight:200; color:blue}
+.calResaltado {font-family:Arial, Helvetica, sans-serif; font-size:11px; text-decoration:none; font-weight:700}
+.calCeldaResaltado {background-color:lightyellow;
+	font-size: 12px;
+	font-weight: bold;
+	}

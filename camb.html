@@ -1,0 +1,80 @@
+<!--#INCLUDE file="top.asp" -->
+<!--#INCLUDE file="top1.asp" -->
+<!--#INCLUDE file="f-izq.asp" -->
+<!--#INCLUDE file="SubMenu.asp" -->
+<!--#INCLUDE FILE="include/conexion.inc" -->
+<!--#INCLUDE FILE="include/periodos.inc" -->
+<!--#INCLUDE FILE="include/funciones.inc" -->
+
+<html>
+<link rel="stylesheet" href="css/tablas.css" type="text/css">
+<title>Portal de Alumnos en L&iacute;nea</title>
+<body onLoad="MM_preloadImages('imagenes/-_r6_c2_f2.jpg','imagenes/-_r7_c2_f2.jpg','imagenes/-_r8_c2_f2.jpg','imagenes/-_r9_c2_f2.jpg','imagenes/-_r11_c2_f2.jpg')">
+<table border="0" cellpadding="0" cellspacing="0"  align="center">
+  <tr>
+	<td>
+		<table width="200" border="0" cellpadding="0" cellspacing="0" align="center">
+		  <tr>
+			<td colspan="2" ><% CargarTop()%><% 
+				if trim(Session("NomAlum"))="" then
+					CargarMenu() 
+				else
+					CargarMenu2() 
+				end if
+			    %></td>
+			<td valign="top" align="center">
+			<% CargarTop1()%><% SubMenu()%>
+			<table width="100%" border="0" cellspacing="0" cellpadding="20" height="550" bgcolor="#FFFFFF">
+			  <tr> 
+				<td valign="top"><p><img src="imagenes/T-calificaciones.gif" width="179" height="38"></p>
+				  <table width="500" border="0" cellpadding="0" cellspacing="0" bgcolor="#333333">
+					<tr valign="top" bgcolor="#FFFFFF">
+					  <td width="500" height="100"><a href="">
+					    <p class="text-menu">Solicitud de Toma de Ramos </p>
+					  </a>
+                        <p class="text-normal-celdas">Lorem ipsum dolor sit amet, consectetuer ipiscingelit. Integer nibh ligula, scelerisque non, elementum et, malesuada fringilla, nunc. Curabitur augue. Nullam id </p></td>
+					  <td width="10">&nbsp;</td>
+				    </tr>
+					<tr valign="top" bgcolor="#FFFFFF">
+					  <td height="100"><a href="">
+					    <p class="text-menu">Modificaci&oacute;n de Toma de Ramos </p>
+					  </a>
+					    <p class="text-normal-celdas">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer nibh ligula, scelerisque non, elementum et, malesuada fringilla, nunc. Curabitur augue. Nullam id</p></td>
+					  <td>&nbsp;</td>
+				    </tr>
+					<tr valign="top" bgcolor="#FFFFFF">
+					  <td height="100"><a href="">
+					    <p class="text-menu">Solicitud de Excepciones </p>
+					  </a>
+                        <p class="text-normal-celdas">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer nibh ligula, scelerisque non, elementum et, malesuada fringilla, nunc. Curabitur augue. Nullam id</p></td>
+					  <td width="10">&nbsp;</td>
+				    </tr>
+					<tr valign="top" bgcolor="#FFFFFF">
+					  <td height="100"><a href="">
+					    <p class="text-menu">Resultado de Solicitud de Asignaturas </p>
+					  </a>
+                        <p class="text-normal-celdas">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer nibh ligula, scelerisque non, elementum et, malesuada fringilla, nunc. Curabitur augue. Nullam id</p></td>
+					  <td>&nbsp;</td>
+				    </tr>
+					<tr valign="top" bgcolor="#FFFFFF">
+					  <td height="100"><a href="">
+					    <p class="text-menu">Malla Curricular </p>
+					  </a>
+                        <p class="text-normal-celdas">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer nibh ligula, scelerisque non, elementum et, malesuada fringilla, nunc. Curabitur augue. Nullam id</p></td>
+					  <td>&nbsp;</td>
+				    </tr>
+			    </table>      
+			      <p>&nbsp;</p></td>
+			  </tr>
+			</table>
+			  </tr>
+			</table>
+			</td>
+		  </tr>
+		</table>
+	</td>
+  </tr>
+</table>
+</body>
+</html>
+<!--#INCLUDE file="include/desconexion.inc" -->

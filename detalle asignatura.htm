@@ -1,0 +1,117 @@
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="400" cellspacing="0" cellpadding="0" height="213" border="1" bordercolor="#FFFFFF">
+  <tr bgcolor="#FFFFFF"> 
+    <td height="8" colspan="2">
+<div align="left"><font face="Verdana, Arial, Helvetica, sans-serif" color="#000000" size="1"><b>Detalles 
+        de la asignatura</b></font></div>
+    </td>
+  </tr>
+  <tr bgcolor="4a5da1"> 
+    <td height="8" width="115" bgcolor="4a5da1"> 
+      <div align="right"><b><font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif" size="1">Asignatura:</font></b></div>
+    </td>
+    <td height="8" bgcolor="ffc172" width="279">&nbsp; </td>
+  </tr>
+  <tr bgcolor="4a5da1"> 
+    <td height="8" width="115" bgcolor="4a5da1"> 
+      <div align="right"><b><font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif" size="1">Secci&oacute;n:</font></b></div>
+    </td>
+    <td height="8" bgcolor="ffc172" width="279">&nbsp; </td>
+  </tr>
+  <% 
+		  If RamosDebe.Eof Then
+		  %>
+  <%
+		  Else
+		   While Not RamosDebe.Eof%>
+  <tr bgcolor="ffc172"> 
+    <td width="115" height="16" align="center" bgcolor="4a5da1"> 
+      <div align="right"><b><font color="#FFFFFF"><font face="Verdana, Arial, Helvetica, sans-serif" size="1">Profesor</font>:</font></b></div>
+    </td>
+    <td height="16" align="center" bgcolor="ffc172" width="279">&nbsp; </td>
+  </tr>
+  <tr bgcolor="ffc172"> 
+    <td width="115" height="16" align="center" bgcolor="4a5da1"> 
+      <div align="right"><b><font color="#FFFFFF"><font face="Verdana, Arial, Helvetica, sans-serif" size="1">Horarrio</font>:</font></b></div>
+    </td>
+    <td height="16" align="center" bgcolor="ffc172" width="279">&nbsp; </td>
+  </tr>
+  <tr bgcolor="ffc172"> 
+    <td width="115" height="2" align="center" bgcolor="4a5da1"> 
+      <div align="right"><b><font color="#FFFFFF"><font face="Verdana, Arial, Helvetica, sans-serif" size="1">Alumnos 
+        inscritos</font>:</font></b></div>
+    </td>
+    <td height="2" align="center" bgcolor="ffc172" width="279">&nbsp; </td>
+  </tr>
+  <tr bgcolor="ffc172"> 
+    <td width="115" height="2" align="center" bgcolor="cccce3" rowspan="15" valign="top"> 
+      <div align="right"><b><font color="#FFFFFF"><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="4a5da1">Nombres</font><font color="4a5da1">:</font></font></b></div>
+    </td>
+    <td height="1" align="center" bgcolor="ffe5c3" width="279">&nbsp; </td>
+  </tr>
+  <tr bgcolor="ffc172"> 
+    <td height="1" align="center" bgcolor="ffe5c3" width="279">&nbsp;</td>
+  </tr>
+  <tr bgcolor="ffc172"> 
+    <td height="2" align="center" bgcolor="ffe5c3" width="279">&nbsp;</td>
+  </tr>
+  <tr bgcolor="ffc172"> 
+    <td height="2" align="center" bgcolor="ffe5c3" width="279">&nbsp;</td>
+  </tr>
+  <tr bgcolor="ffc172"> 
+    <td height="2" align="center" bgcolor="ffe5c3" width="279">&nbsp;</td>
+  </tr>
+  <tr bgcolor="ffc172"> 
+    <td height="2" align="center" bgcolor="ffe5c3" width="279">&nbsp;</td>
+  </tr>
+  <tr bgcolor="ffc172"> 
+    <td height="2" align="center" bgcolor="ffe5c3" width="279">&nbsp;</td>
+  </tr>
+  <tr bgcolor="ffc172"> 
+    <td height="2" align="center" bgcolor="ffe5c3" width="279">&nbsp;</td>
+  </tr>
+  <tr bgcolor="ffc172"> 
+    <td height="2" align="center" bgcolor="ffe5c3" width="279">&nbsp;</td>
+  </tr>
+  <tr bgcolor="ffc172"> 
+    <td height="2" align="center" bgcolor="ffe5c3" width="279">&nbsp;</td>
+  </tr>
+  <tr bgcolor="ffc172"> 
+    <td height="2" align="center" bgcolor="ffe5c3" width="279">&nbsp;</td>
+  </tr>
+  <tr bgcolor="ffc172"> 
+    <td height="2" align="center" bgcolor="ffe5c3" width="279">&nbsp;</td>
+  </tr>
+  <tr bgcolor="ffc172"> 
+    <td height="2" align="center" bgcolor="ffe5c3" width="279">&nbsp;</td>
+  </tr>
+  <tr bgcolor="ffc172"> 
+    <td height="2" align="center" bgcolor="ffe5c3" width="279">&nbsp;</td>
+  </tr>
+  <tr bgcolor="ffc172"> 
+    <td height="2" align="center" bgcolor="ffe5c3" width="279">&nbsp;</td>
+  </tr>
+  <%
+		     RamosDebe.MoveNext
+		   Wend
+		 End If %>
+  <% 
+		  If RamosPuede.Eof Then
+		  %>
+  <%
+		  Else
+           While Not RamosPuede.Eof%>
+  <%
+		     RamosPuede.MoveNext
+		  Wend
+		 End If 
+		  %>
+</table>
+</body>
+</html>

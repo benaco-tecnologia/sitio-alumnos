@@ -1,0 +1,56 @@
+﻿<%
+dim xml 
+xml = Session("miXML")
+%>
+<html>
+<link rel="stylesheet" href="css/tablas.css" type="text/css" />
+<head>
+    <title>Boton de Pago Servipag</title>
+</head>
+<body>
+    <form method="post" action="https://200.54.71.237/bpe/bpe_inicio.asp">
+    <% if xml="" then response.write("Su sesi&oacuten ha expirado.  Deber&aacute volver a loguearse antes de continuar.") end if %>
+    <textarea style="width: 1; height: 1" name="xml">
+<%=xml%>
+</textarea>
+    <br />
+    <b class="Tit-celdas"><font face="Verdana, Arial, Helvetica, sans-serif">Confirmaci&oacute;n
+        de Pago</font> </b>
+    <br />
+    <br />
+    <table width="810" border="0" cellpadding="3" cellspacing="2">
+        <tr>
+            <td width="133" height="25" background="Imagenes/fdo-cabecera-cel.jpg" class="text-cabecera-celda">
+                <strong class="text-cabecera-celda">NOMBRE : </strong>
+            </td>
+            <td width="435" height="25" bgcolor="#9FDBE8" class="tex-totales-celda">
+                <font face="Arial, Helvetica, sans-serif" class="tex-totales-celda">
+                    <%=Session("NomAlum")%></font>
+            </td>
+        </tr>
+        <tr>
+            <td height="25" background="Imagenes/fdo-cabecera-cel.jpg" bgcolor="#D7EAFD" class="text-cabecera-celda">
+                <strong class="text-cabecera-celda">RUT : </strong>
+            </td>
+            <td height="25" bgcolor="#9FDBE8" class="tex-totales-celda">
+                <%=Session("RutCliente")%>
+            </td>
+        </tr>
+        <tr>
+            <td background="Imagenes/fdo-cabecera-cel.jpg" bgcolor="#D7EAFD" class="text-cabecera-celda">
+                <strong class="text-cabecera-celda">MONTO: </strong>
+            </td>
+            <td height="25" bgcolor="#9FDBE8" class="tex-totales-celda">
+                <%=FormatNumber(Session("monto_a_pagar"), 0)%>
+            </td>
+        </tr>
+    </table>
+    <center>
+        <br />
+        <br />
+        <br />
+        <br />
+        <input type="image" src="Imagenes/botones/continuar-of.gif"></center>
+    </form>
+</body>
+</html>

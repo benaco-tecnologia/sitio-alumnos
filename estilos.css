@@ -1,0 +1,45 @@
+.cajabusca {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; font-style: normal; color: #003657; background-color: #FFFFFF; height: 18px; width: 150px; text-decoration: none; list-style-type: none}
+.texgral {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; font-style: normal; color: #999999; text-decoration: none}
+.texgralazul { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; font-style: normal; color: #003657; text-decoration: none ; text-align: justify}
+.texgralazul02 { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; font-style: normal; color: #266E91; text-decoration: none }
+.texgralrojo { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; font-style: normal; color: #CC0033; text-decoration: none ; font-weight: bold}
+.texazulchico {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 9px; color: #003657}
+.tit_agenda {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; color: #003366; text-transform: none}
+.texgris { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; font-style: normal; color: #999999; text-decoration: none ; font-weight: bold; font-variant: normal; text-transform: none}
+.linkgris {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; font-style: normal; line-height: normal; font-weight: bold; font-variant: normal; text-transform: none; color: #999999; text-decoration: none}
+.linkgris:hover {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; font-style: normal; line-height: normal; font-weight: bold; font-variant: normal; text-transform: none; color: #666666; text-decoration: none}
+.linkazul {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; font-style: normal; line-height: normal; font-weight: bold; font-variant: normal; text-transform: none; color: #003657; text-decoration: none}
+.linkazul:hover {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; font-style: normal; line-height: normal; font-weight: bold; font-variant: normal; text-transform: none; color: #005E95; text-decoration: none}
+.textgris2 {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; color: #666666; text-decoration: none}
+.sub-tit_sedes {  font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-weight: bold; color: #003366; text-decoration: none}
+.linkazul_02 { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; font-style: normal; color: #003657; line-height: normal; font-weight: normal; font-variant: normal; text-transform: none; text-decoration: none}
+.linkazul_02:hover {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; color: #0079C1; text-decoration: none}
+.linkgris02 { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 9px; font-style: normal; line-height: normal; font-weight: normal; font-variant: normal; text-transform: none; color: #999999; text-decoration: none }
+.form {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; font-style: normal; line-height: normal; font-weight: normal; font-variant: normal; text-transform: none; color: #003366; text-decoration: none; height: 18px; width: 200px; border: #999999 inset; border-width: auto auto thin thin}
+.linkazul_03 { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; font-style: normal; color: #003657; line-height: normal; font-weight: normal; font-variant: normal; text-transform: none; text-decoration: none }
+.linkrojo {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; font-style: normal; line-height: normal; font-weight: bold; font-variant: normal; text-transform: none; color: #CC0033; text-decoration: none}
+.linkrojo:hover {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; font-style: normal; line-height: normal; font-weight: bold; font-variant: normal; text-transform: none; color: #999999; text-decoration: none}
+.nueva_inscrip {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; color: #003366; font-weight: bold; text-decoration: underline}
+.textrojogrande {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #b4162c;
+	font-weight: bold;
+}
+.muygranderojo {
+	font-family: "Arial Narrow", Tahoma, Arial;
+	font-size: 16px;
+	font-weight: bolder;
+	color: #b4162c;
+}.blanco {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFFFFF;
+	font-style: normal;
+	line-height: normal;
+	font-variant: normal;
+	text-transform: none;
+	text-decoration: none;
+
+}

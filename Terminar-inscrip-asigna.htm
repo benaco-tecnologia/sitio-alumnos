@@ -1,0 +1,200 @@
+<!--#INCLUDE FILE="include/conexion.inc" -->
+<!--#INCLUDE FILE="include/funciones.inc" -->
+<html><body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgcolor="#ffffff">
+<div align="left">
+  <table border="0" cellpadding="0" cellspacing="0" height="300" align="left" width="584">
+    <!-- fwtable fwsrc="f-der.png" fwbase="f-der.gif" fwstyle="Dreamweaver" fwdocid = "742308039" fwnested="0" -->
+    <tr> 
+      <td><img name="fder_r1_c1" src="imag/f-der/f-der_r1_c1.gif" width="336" height="19" border="0"></td>
+      <td colspan="4"><img name="fder_r1_c2" src="imag/f-der/f-der_r1_c2.gif" width="248" height="19" border="0"></td>
+    </tr>
+    <tr> 
+      <td><img src="imag/f-der/terminar.gif" width="336" height="28"></td>
+      <td colspan="4"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="248" height="28">
+          <param name="movie" value="swf/flecha.swf">
+          <param name="quality" value="high">
+          <embed src="swf/flecha.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="248" height="28">
+          </embed> 
+        </object></td>
+    </tr>
+    <tr valign="bottom"> 
+      <td colspan="5" height="15"><font size="1" face="Verdana, Arial, Helvetica, sans-serif">Ud. 
+        est&aacute; terminando su inscripci&oacute;n de asignaturas, despu&eacute;s 
+        de ACEPTAR no podr&aacute; hacer modificaciones.</font></td>
+    </tr>
+    <tr valign="bottom"> 
+      <td colspan="5" height="1">&nbsp;</td>
+    </tr>
+    <tr valign="bottom"> 
+      <td height="1"> 
+        <div align="right"> </div>
+      </td>
+      <td width="216" height="1"> 
+        <div align="right"><a href="result-inscrip.asp" target="_self"> 
+          <input type="submit" name="Submit" value="Volver">
+          </a></div>
+      </td>
+      <td width="56" height="1">&nbsp;</td>
+      <td width="36" height="1"> 
+        <div align="right"><a href="result-inscrip.asp" target="_self"> Aceptar</a></div>
+      </td>
+      <td width="12" height="1">&nbsp;</td>
+    </tr>
+    <tr valign="bottom"> 
+      <td colspan="5" height="2">&nbsp;</td>
+    </tr>
+    <tr valign="top"> 
+      <td colspan="5" height="94"> 
+        <table width="584" cellspacing="0" cellpadding="0" height="72" border="1" bordercolor="#FFFFFF">
+          <tr bgcolor="4a5da1"> 
+            <td height="16" width="48" bgcolor="4a5da1"> 
+              <div align="center"><font face="Verdana, Arial, Helvetica, sans-serif" color="#FFFFFF"><b><font size="1">C&oacute;digo</font></b></font></div>
+            </td>
+            <td height="16" width="286"> 
+              <div align="center"><font face="Verdana, Arial, Helvetica, sans-serif" color="#FFFFFF"><b><font size="1">Asignatura</font></b></font></div>
+            </td>
+            <td height="16" width="65"> 
+              <div align="center"><font face="Verdana, Arial, Helvetica, sans-serif" color="#FFFFFF"><b><font size="1">secci&oacute;n</font></b></font></div>
+            </td>
+            <td height="16" width="117"> 
+              <div align="center"><font face="Verdana, Arial, Helvetica, sans-serif" color="#FFFFFF"><b><font size="1">Horario</font></b></font></div>
+            </td>
+            <td height="16" width="56"> 
+              <div align="center"><font face="Verdana, Arial, Helvetica, sans-serif" color="#FFFFFF"><b><font size="1">Curso</font></b></font><font face="Verdana, Arial, Helvetica, sans-serif" color="#FFFFFF"><b></b></font></div>
+            </td>
+          </tr>
+          <% 
+		  If RamosDebe.Eof Then
+		  %>
+          <%
+		  Else
+		   While Not RamosDebe.Eof%>
+          <tr bgcolor="ffc172"> 
+            <td width="48" height="16" align="center"><font face="Verdana" size="1"><%=RamosDebe(0)%></font></td>
+            <td width="286" height="16" align="center"><font face="Verdana" size="1"><%=RamosDebe(1)%></font></td>
+            <td width="65" height="16" align="center"><font face="Verdana" size="1"><%=Session("SecCalc")%></font></td>
+            <td width="117" height="16" align="center"><font face="Verdana" size="1"><%=Session("HorCalc")%></font></td>
+            <td width="56" height="16" align="center"><font face="Verdana" size="1">&nbsp;<%=Session("CodCalc") & Session("SecCalc")%></font> 
+              <div align="center"> <font face="Verdana" size="1"> </font> </div>
+            </td>
+          </tr>
+          <tr bgcolor="ffc172"> 
+            <td width="48" height="16" align="center"><font face="Verdana" size="1"><%=RamosDebe(0)%></font></td>
+            <td width="286" height="16" align="center"><font face="Verdana" size="1"><%=RamosDebe(1)%></font></td>
+            <td width="65" height="16" align="center"><font face="Verdana" size="1"><%=Session("SecCalc")%></font></td>
+            <td width="117" height="16" align="center"><font face="Verdana" size="1"><%=Session("HorCalc")%></font></td>
+            <td width="56" height="16" align="center"><font face="Verdana" size="1">&nbsp;<%=Session("CodCalc") & Session("SecCalc")%></font> 
+              <div align="center"> <font face="Verdana" size="1"> </font> </div>
+            </td>
+          </tr>
+          <tr bgcolor="ffc172"> 
+            <td width="48" height="16" align="center"><font face="Verdana" size="1"><%=RamosDebe(0)%></font></td>
+            <td width="286" height="16" align="center"><font face="Verdana" size="1"><%=RamosDebe(1)%></font></td>
+            <td width="65" height="16" align="center"><font face="Verdana" size="1"><%=Session("SecCalc")%></font></td>
+            <td width="117" height="16" align="center"><font face="Verdana" size="1"><%=Session("HorCalc")%></font></td>
+            <td width="56" height="16" align="center"><font face="Verdana" size="1">&nbsp;<%=Session("CodCalc") & Session("SecCalc")%></font> 
+              <div align="center"> <font face="Verdana" size="1"> </font> </div>
+            </td>
+          </tr>
+          <%
+		     RamosDebe.MoveNext
+		   Wend
+		 End If %>
+          <% 
+		  If RamosPuede.Eof Then
+		  %>
+          <%
+		  Else
+           While Not RamosPuede.Eof%>
+          <%
+		     RamosPuede.MoveNext
+		  Wend
+		 End If 
+		  %>
+        </table>
+      </td>
+    </tr>
+    <tr valign="top"> 
+      <td colspan="5" height="1">&nbsp;</td>
+    </tr>
+    <tr valign="top"> 
+      <td colspan="5" height="1"><b><font size="1" face="Verdana, Arial, Helvetica, sans-serif" color="4a5da1">Listado 
+        final de asignaturas agregadas</font></b></td>
+    </tr>
+    <tr valign="top"> 
+      <td colspan="5" height="2"> 
+        <table width="584" cellspacing="0" cellpadding="0" height="72" border="1" bordercolor="#FFFFFF">
+          <tr bgcolor="4a5da1"> 
+            <td height="16" width="33" bgcolor="4a5da1"> 
+              <div align="center"><font face="Verdana, Arial, Helvetica, sans-serif" color="#FFFFFF"><b><font size="1">Mod</font></b></font></div>
+            </td>
+            <td height="16" width="81"> 
+              <div align="center"><font face="Verdana, Arial, Helvetica, sans-serif" color="#FFFFFF"><b><font size="1">Lunes</font></b></font></div>
+            </td>
+            <td height="16" width="83"> 
+              <div align="center"><font face="Verdana, Arial, Helvetica, sans-serif" color="#FFFFFF"><b><font size="1">Martes</font></b></font></div>
+            </td>
+            <td height="16" width="86"> 
+              <div align="center"><font face="Verdana, Arial, Helvetica, sans-serif" color="#FFFFFF"><b><font size="1">Mi&eacute;rcoles</font></b></font></div>
+            </td>
+            <td height="16" width="83"> 
+              <div align="center"><font face="Verdana, Arial, Helvetica, sans-serif" color="#FFFFFF"><b><font size="1">Jueves</font></b></font></div>
+            </td>
+            <td height="16" width="83"> 
+              <div align="center"><font face="Verdana, Arial, Helvetica, sans-serif" color="#FFFFFF"><b><font size="1">Viernes</font></b></font></div>
+            </td>
+            <td height="16" width="87"> 
+              <div align="center"><font face="Verdana, Arial, Helvetica, sans-serif" color="#FFFFFF"><b><font size="1">S&aacute;bado</font></b></font></div>
+            </td>
+          </tr>
+          <tr bgcolor="ffc172"> 
+            <td width="33" height="16">&nbsp;</td>
+            <td width="81" height="16">&nbsp;</td>
+            <td width="83" height="16">&nbsp;</td>
+            <td width="86" height="16">&nbsp;</td>
+            <td width="83" height="16">&nbsp;</td>
+            <td width="83" height="16">&nbsp;</td>
+            <td width="87" height="16"><font face="Verdana" size="1"> </font></td>
+          </tr>
+          <tr bgcolor="ffc172"> 
+            <td width="33" height="16">&nbsp;</td>
+            <td width="81" height="16">&nbsp;</td>
+            <td width="83" height="16">&nbsp;</td>
+            <td width="86" height="16">&nbsp;</td>
+            <td width="83" height="16">&nbsp;</td>
+            <td width="83" height="16">&nbsp;</td>
+            <td width="87" height="16">&nbsp;</td>
+          </tr>
+          <tr bgcolor="ffc172"> 
+            <td width="33" height="16">&nbsp;</td>
+            <td width="81" height="16">&nbsp;</td>
+            <td width="83" height="16">&nbsp;</td>
+            <td width="86" height="16">&nbsp;</td>
+            <td width="83" height="16">&nbsp;</td>
+            <td width="83" height="16">&nbsp;</td>
+            <td width="87" height="16">&nbsp;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr valign="top"> 
+      <td colspan="5" height="2"> 
+        <div align="right"><font size="1" face="Verdana, Arial, Helvetica, sans-serif" color="#FFFFFF">espu&eacute;s</font><font size="1" face="Verdana, Arial, Helvetica, sans-serif" color="#666666"> 
+          </font></div>
+      </td>
+    </tr>
+    <tr valign="middle"> 
+      <td colspan="5" height="10"> 
+        <div align="right"><font size="1" face="Verdana, Arial, Helvetica, sans-serif" color="#666666">(Este 
+          documento NO constituye certificado)</font></div>
+      </td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>
+<%
+RamosDebe.Close()
+RamosPuede.Close()
+'Conn.Close()
+%>

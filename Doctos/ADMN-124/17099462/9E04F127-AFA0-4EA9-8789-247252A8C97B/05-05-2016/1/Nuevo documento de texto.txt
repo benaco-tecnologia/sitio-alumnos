@@ -1,0 +1,27 @@
+ALTER TABLE MT_CLIENT ALTER COLUMN PASAPORTE  VARCHAR(50)  NULL
+DA_RA_PRACTICA
+LIS_ALUMNOS_PRACTICA
+UPDATE_RA_PRACSEMI
+SP_ALUMNOSPRACTICA
+
+SP_ALUMNOSSEMINARIO2
+list_alumnos_seminario
+
+
+UPDATE ra_seccio SET AsistOnlineDocentes = dbo.Fn_ValorParame('USAASISTONLINEPORTALDOCENTE'), 
+      ACTIVAASISTALUMNODIARIA = dbo.Fn_ValorParame('ACTIVAASISTALUMNODIARIA') 
+WHERE  ano = dbo.fn_valorparame('ano') and periodo = dbo.fn_valorparame('periodo') 
+
+
+C:\Inetpub\wwwroot\ETPCsharp\rpt.vbs SGUNET
+
+
+
+
+SP_DETALLE_NET   
+SP_IMPRESION_INFORME
+SP_DETALLE_ARANCEL_NET 
+SP_IMPRESION_BOLETA
+SP_DETALLE_PAGOS_NET
+---------------------------
+ mt_docpag_perfil****************

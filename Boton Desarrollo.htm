@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>Test Boton Pago Estandar</title>
+</head>
+<body>
+<form method="post" action="https://200.54.71.237/bpe/bpe_inicio.asp">
+
+<textarea style="width:600; height:360" name="xml">
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Servipag>
+	<Header>
+		<FirmaEPS>r5mOOrC6YZcy2SLtwilP1hIugm802xu/TRNjuHwanlVUfhqPtCUX9B5LDuqfHGiRvwvYKFuahQwpP9jxzNThuLBosKoKvblH3GFBT3ek2HiKmsf61Sv0HoFxYcWkXK4nVFknCTFpmaMaQ9CoZRtkdtqZAW1nB/Jc1C37ru10WO4=</FirmaEPS>
+		<CodigoCanalPago>37</CodigoCanalPago>
+		<IdTxCliente>258230348</IdTxCliente>
+		<FechaPago>20100310</FechaPago>
+		<MontoTotalDeuda>6500</MontoTotalDeuda>
+		<NumeroBoletas>1</NumeroBoletas>
+	</Header>
+	<Documentos>
+		<IdSubTrx>1</IdSubTrx>
+		<CodigoIdentificador>CAMBIAR</CodigoIdentificador>
+		<Boleta>66</Boleta>
+		<Monto>6500</Monto>
+		<FechaVencimiento>20100310</FechaVencimiento>
+	</Documentos>
+</Servipag>
+</textarea>
+<input type="submit" value="Enviar">
+</form>
+</body>
+</html>

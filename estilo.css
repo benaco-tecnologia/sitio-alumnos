@@ -1,0 +1,181 @@
+p  {
+	font-family:Arial, Helvetica, sans-serif;
+	
+}
+
+#contenedor_global{
+	width:		1020px ;
+	margin:		0px auto;
+	
+	
+}
+
+#cabecera{
+	height:		100px ;
+	width:		1020px;
+	
+	font-family:Arial, Helvetica, sans-serif;
+	
+	
+}
+
+#titulo{
+	text-transform:uppercase;
+	text-align:right;	
+	float:		left ;
+	font-size:24px;
+	color:#000000;
+	margin: 10px 20px 10px 20px;
+	font-weight:bold;
+
+	
+}
+
+
+#linea {
+	float:		left ;
+	margin: 10px 20px 10px 20px;
+}
+	
+
+#bajada {
+	
+	float:left ;
+	font-size:14px;
+	margin:25px 20px 10px 20px;
+	
+	}
+
+
+
+#menu{
+	height:30px ;
+	width:1020px ;
+	background:#333333;
+	
+}
+
+
+	
+#menu ul li a {
+	text-decoration:none;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#FFFFFF;
+	display:block;
+	width: 100px;
+	height: 30px;
+	padding-top:10px;
+}
+
+
+#menu ul li {
+	width:100px;
+	height:30px;
+	display:inline;
+	float:right;
+	text-align:center;
+	border-left:1px solid #000;
+}
+
+
+
+#visitado {
+	background:#FFCC00;
+	
+}
+
+
+
+
+#zona_1{
+	padding:20px 20px 20px 20px;
+	height:		340px ;
+	width:		200px;
+	float:		left ;
+	background-color:#434244;
+	color:#FFFFFF;
+	font-weight:bold;
+	}
+	
+	#rut, #pass {
+	width: 170px;
+	color:#fff;
+	background:#6e6c6b;
+	border:1px solid #6e6c6b;
+	
+}
+#recuperar{
+	text-decoration:underline;
+	color:#FFFFFF;
+	height:15px;
+}
+
+
+#recuperar, #enviar {
+	float:left;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:10px;
+	color:#CCCCCC;
+	padding:2px 2px 2px 2px;
+}
+
+
+#enviar {
+	height:15px;
+	text-decoration:none;
+	background:#FFCC00;
+	color:#000000;
+}
+	
+
+	
+		
+	
+
+#zona_info{
+	height:		380px ;
+	width:		780px ;
+	float:		left ;
+	background-color:#6e6c6b;
+	
+	
+	
+}
+
+#foto{
+	float:left;
+	width:260px;
+	
+}
+
+#texto {
+	float:left;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#FFF;
+	width:500px;
+	height:260px;
+	padding:40px 0 0 0;
+	background-color:#6e6c6b;
+
+	
+}
+
+
+
+
+#pie{
+	height:		10px ;
+	width:		1020px ;
+	clear:		both ;
+	background-color:#b01e23;
+	
+	
+	
+}.fi {
+	color: #FFCC00;
+}
+.fi {
+	color: #FFCC00;
+}

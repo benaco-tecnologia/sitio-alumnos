@@ -1,0 +1,15 @@
+sn -k llave.snk
+regasm PagoWeb.dll /tlb
+gacutil /i PagoWeb.dll
+
+
+llamadas VB6
+
+Dim a As PagoWeb.PagoWebClase
+Set a = New PagoWeb.PagoWebClase
+MsgBox a.Encripta("11111")
+
+
+Dim a As Object
+Set a = CreateObject("PagoWeb.InterfacePagoWeb")
+MsgBox a.Encripta("11111")
