@@ -1,4 +1,15 @@
+# ignore config files
+
 certificados/conexion.inc
 include/conexion.inc
 include/conexionresp.inc
 global.asa
+
+# ignore all logs
+*.log
+
+# ignore tmp folders or files
+tmp
+
+# ignore test folders or files
+test
